@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk-Ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя форма</title
+  </head>
+  <body>
+    <h1>Моя форма</h1>
+
+    <form method="POST" action="https://httpbin.org/post">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="username" />
+      <br /><br />
+
+      <label
+        >Електронна пошта:
+        <input type="email" name="email" />
+      </label>
+      <br /><br />
+
+      <label
+        >Дата народження:
+        <input type="date" name="dob" />
+      </label>
+      <br /><br />
+
+      <label
+        >Повідомлення:
+        <textarea name="comments"></textarea>
+      </label>
+      <br /><br />
+
+      <fieldset>
+        <legend>Ваші улюблені напої?</legend>
+        <label
+          ><input type="checkbox" name="drink" value="coffee" /> Кава</label
+        >
+        <label><input type="checkbox" name="drink" value="tea" /> Чай</label>
+        <label><input type="checkbox" name="drink" value="juice" /> Сік</label>
+        <label><input type="checkbox" name="drink" value="water" /> Вода</label>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Моя національність</legend>
+        <label
+          ><input type="radio" name="nationality" value="ukrainian" />
+          Українець(ка)</label
+        >
+        <label
+          ><input type="radio" name="nationality" value="polish" /> Поляк</label
+        >
+        <label
+          ><input type="radio" name="nationality" value="other" /> Інше</label
+        >
+      </fieldset>
+      <br /><br />
+
+      <button type="submit">Відправити</button>
+      <button type="reset">Очистити</button>
+    </form>
+
+    <br /><br />
+
+    <picture>
+      <source
+        media="(max-width: 468px)"
+        srcset="https://picsum.photos/300/500"
+      />
+      <source
+        media="(min-width: 468px)"
+        srcset="https://picsum.photos/1000/400"
+      />
+      <img
+        src="https://picsum.photos/1000/400"
+        alt="Демонстраційне зображення"
+      />
+    </picture>
+  </body>
+</html>
