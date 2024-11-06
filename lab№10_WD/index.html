@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+    <style>
+        /* Общие стили */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden; /* Убираем прокрутку */
+        }
+        
+        /* Стили для фонового видео */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Поміщаємо видео за содержимым */
+            object-fit: cover; /* Масштабую видео, що б оно охватило весь екран */
+        }
+
+        /* Стилі для основного контента */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозорий фон */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозорий фон для навігації */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            height: calc(100% - 140px); /* Висота з урахуванням висоты header і nav */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .button {
+            margin-top: 20px;
+            background-color: #1b2838;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2a475e;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Відео на фоні -->
+<video autoplay muted loop class="video-background">
+    <source src="background-video.mp4" type="video/mp4"> <!-- Замінити на ваш файл -->
+    Ваш браузер не підтримує відтворення відео.
+</video>
+
+<!-- Верхня частина сторінки -->
+<header>
+    <h1>GameStore</h1>
+</header>
+
+<!-- Навігація -->
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="catalog.html">Каталог ігор</a>
+    <a href="about.html">Про нас</a>
+    <a href="contact.html">Контакти</a>
+</nav>
+
+<!-- Основний контент -->
+<div class="content">
+    <div>
+        <h1>Найкращі ігри чекають на тебе</h1>
+        <p>Відкрий світ ігор з чудовими знижками та спеціальними пропозиціями!</p>
+        <a href="catalog.html" class="button">Перейти в каталог</a>
+    </div>
+</div>
+
+</body>
+</html>

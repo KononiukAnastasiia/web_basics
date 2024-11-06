@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог ігор</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #121212; color: white; }
+        header { background-color: #1b2838; padding: 20px; text-align: center; }
+        header h1 { color: white; }
+        nav {
+            background-color: #2a475e;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #3c5a7f;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #3c5a7f;
+        }
+        .catalog { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+        .game-card { background-color: #1e1e1e; border: 1px solid #333; border-radius: 8px; width: 300px; margin: 15px; padding: 20px; text-align: center; }
+        .game-card img { max-width: 100%; height: auto; border-radius: 5px; }
+        .buy-button { background-color: #1b2838; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Каталог ігор</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="catalog.html">Каталог ігор</a>
+    <a href="about.html">Про нас</a>
+    <a href="contact.html">Контакти</a>
+</nav>
+<div class="catalog">
+
+    <!-- Первая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/capsule_616x353.jpg?t=1674744039" alt="Cyberpunk 2077">
+        <h2>Cyberpunk 2077</h2>
+        <p><strong>Жанр:</strong> Екшен, РПГ</p>
+        <p><strong>Ціна:</strong> 1099₴.</p>
+        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Вторая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/capsule_616x353.jpg?t=1675377025" alt="Red Dead Redemption 2">
+        <h2>Red Dead Redemption 2</h2>
+        <p><strong>Жанр:</strong> Пригоди, Екшен</p>
+        <p><strong>Ціна:</strong> 899₴.</p>
+        <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Третья игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_616x353.jpg?t=1676550934" alt="Dota 2">
+        <h2>Dota 2</h2>
+        <p><strong>Жанр:</strong> Моба, Стратегія</p>
+        <p><strong>Ціна:</strong> Безкоштовно</p>
+        <a href="https://store.steampowered.com/app/570/Dota_2/" class="buy-button">Грати в Steam</a>
+    </div>
+
+    <!-- Четвертая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1676569137" alt="Grand Theft Auto V">
+        <h2>Grand Theft Auto V</h2>
+        <p><strong>Жанр:</strong> Екшен, Відкритий світ</p>
+        <p><strong>Ціна:</strong> 358₴.</p>
+        <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Пятая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/capsule_616x353.jpg?t=1676550989" alt="The Witcher 3: Wild Hunt">
+        <h2>The Witcher 3: Wild Hunt</h2>
+        <p><strong>Жанр:</strong> РПГ, Екшен</p>
+        <p><strong>Ціна:</strong> 182₴.</p>
+        <a href="https://store.steampowered.com/app/292030/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Новые игры -->
+
+    <!-- Шестая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1676566921" alt="Counter-Strike: Global Offensive">
+        <h2>Counter-Strike: Global Offensive</h2>
+        <p><strong>Жанр:</strong> Шутер, Екшен</p>
+        <p><strong>Ціна:</strong> Безкоштовно</p>
+        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" class="buy-button">Грати в Steam</a>
+    </div>
+
+    <!-- Седьмая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/594570/capsule_616x353.jpg?t=1676567444" alt="Total War: WARHAMMER II">
+        <h2>Total War: WARHAMMER II</h2>
+        <p><strong>Жанр:</strong> Стратегія</p>
+        <p><strong>Ціна:</strong> 237₴.</p>
+        <a href="https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Восьмая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/105600/capsule_616x353.jpg?t=1676571130" alt="Terraria">
+        <h2>Terraria</h2>
+        <p><strong>Жанр:</strong> Пригоди, Пісочница</p>
+        <p><strong>Ціна:</strong> 225₴.</p>
+        <a href="https://store.steampowered.com/app/105600/Terraria/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Девятая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/capsule_616x353.jpg?t=1676568661" alt="Stardew Valley">
+        <h2>Stardew Valley</h2>
+        <p><strong>Жанр:</strong> РПГ, Симулятор</p>
+        <p><strong>Ціна:</strong> 229₴.</p>
+        <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" class="buy-button">Купити в Steam</a>
+    </div>
+
+    <!-- Десятая игра -->
+    <div class="game-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/582010/capsule_616x353.jpg?t=1676552345" alt="Monster Hunter: World">
+        <h2>Monster Hunter: World</h2>
+        <p><strong>Жанр:</strong> Екшен, РПГ</p>
+        <p><strong>Ціна:</strong> 313₴.</p>
+        <a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" class="buy-button">Купити в Steam</a>
+    </div>
+
+</div>
+
+</body>
+</html>
